@@ -3,6 +3,7 @@ body{
     padding: 0px;
     text-align: center;
     background-color: rgba(159, 170, 119, 0.493);
+    font-weight: bold;
 }
 button{
     display: flex;
@@ -22,6 +23,7 @@ button{
     border-radius: 10px;
     font-weight: bold;
     color: rgb(30, 51, 99);
+   
 }
 #list-item:focus{
     background-color: rgba(159, 170, 119, 0.493)
@@ -32,4 +34,17 @@ button{
     align-items: center;
     margin-top: 200px ;
  
+}
+#itemInList{
+   display: inline-block;
+    margin-top: 20px ;
+    margin-right: 350px ;
+}
+.btn{
+    float: left; 
+    width: 100px;
+    
+  
+   
+    
 }

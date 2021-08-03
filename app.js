@@ -27,7 +27,10 @@ function add() {
     editbtn.setAttribute('class', 'btn')
     editbtn.setAttribute('onclick', 'editDom(this)')
     // orderedList.appendChild(editbtn) //WRONG STEP
-    li.appendChild(editbtn)
+    li.appendChild(editbtn);
+    orderedList.appendChild(li)
+
+
 
 }
 function delAll() {
@@ -53,7 +56,9 @@ function editDom(editElement){
 
     // let newTxt = prompt('write updated txt')
 
-    // editElement.parentNode.firstChild.innerHTML = newTxt
+    // editElement.parentNode.firstChild.innerHTML = newTxt;
+   
+   
 
     
     let editedText = editElement.parentNode.firstChild.innerHTML;
@@ -69,14 +74,15 @@ function updateItem(updateElement){
     console.log(updateElement,itemList.value);
 
     let parentToFind = orderedList.childNodes;
+    
 
     console.log(parentToFind);
 
-    // orderedList.childNodes[1].childNodes[0].innerHTML = itemList.value;
+    orderedList.childNodes[1].childNodes[0].innerHTML = itemList.value;
 
-    // addBtn.innerHTML = 'ADD';
+    addBtn.innerHTML = 'ADD';
 
-    // itemList.value = '';
+    itemList.value = '';
 
 
 }
